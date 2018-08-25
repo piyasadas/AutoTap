@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AutomaticOrManual">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modes"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_margin="16dp"
+        android:textColor="#00796b"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/automatic_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Automatic Mode"
+        android:paddingLeft="16dp"
+        android:layout_margin="16dp"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+
+
+
+    <RadioButton
+        android:id="@+id/manual_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:layout_margin="16dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="Manual Mode"/>
+    </RadioGroup>
+
+
+
+</LinearLayout>

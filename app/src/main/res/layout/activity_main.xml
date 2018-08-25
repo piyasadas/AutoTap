@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/app_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto Tap"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+   <Switch
+       android:id="@+id/bluetooth_switch"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:padding="16dp"
+       android:text="Bluetooth"
+       android:textStyle="bold"
+       android:textAppearance="?android:textAppearanceMedium"
+       android:layout_gravity="center_horizontal"
+       android:background="#81d4fa"/>
+
+   <TextView
+       android:id="@+id/paired_devices_text_view"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Paired Devices"
+       android:layout_margin="16dp"
+       android:textAppearance="?android:textAppearanceMedium"
+       android:textColor="#00796b"
+       android:textStyle="bold"
+       android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/no_paired_devices_found_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"/>
+
+   <ListView
+       android:id="@+id/paired_devices_list_view"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="16dp"
+       android:layout_marginRight="16dp"
+       android:layout_marginBottom="16dp"
+       android:scrollbars="none"
+       android:visibility="invisible">
+
+   </ListView>
+
+</LinearLayout>

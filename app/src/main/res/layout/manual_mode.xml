@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00796b"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="Manual Mode"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"
+       />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Set time for "
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/time_input_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:hint="these"
+            android:backgroundTint="#00796b"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:inputType="number"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "/>
+
+
+        <Spinner
+            android:id="@+id/spinner_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/manual_mode_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:textColor="#00796b"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/manual_mode_ok_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ok"
+            android:textColor="#00796b"
+            style="?android:attr/buttonBarButtonStyle" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
